@@ -56,7 +56,7 @@ agent = FunctionCallingAgent.from_tools(
 
 
 async def get_response(agent) -> asyncio.coroutines:
-    await agent.achat("What is (121 * 3) + (5 * 8)?")
+    return await agent.achat("What is (121 * 3) + (5 * 8)?")
 
 
 # response = await agent.achat("What is (121 * 3) + (5 * 8)?")
